@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 <link rel="stylesheet" href="output.css">
@@ -12,18 +15,21 @@
 </head>
 <body class=" bg-Grayishblue ">
 
-  <div class="flex justify-center items-center w-full h-screen">
-<div class=" w-[220px] h-auto bg-[#ffffff] rounded-lg p-3 flex flex-col justify-center items-center space-y-3 shadow-xl shadow-shadow">
-  <img src="./images/image-qr-code.png" class=" w-[220px] h-[200px] rounded-md" alt="qrcode"/>
+  <main class="flex flex-col sm:justify-center sm:items-center w-full h-screen">
+  <div class=" w-[350px] h-[500px] bg-[#ffffff] p-3 rounded-[20px] space-y-2  shadow-xl shadow-shadow">
+  <img src="./images/image-qr-code.png" class=" w-[350px]  rounded-[10px]" alt="qrcode"/>
   <div class="">
-  <h3 class=" text-Darkblue font-semibold text-[15px] text-center w-full">Improve your front-end </h3>
-  <h3 class=" text-Darkblue font-semibold text-[15px] text-center w-full">  skill by building projects </h3>
-  <p class=" text-Lightgray text-center text-[10px] mb-3">scan the Qr code and vist front-end mentor take your coding skills to the next skill</p>
+  <h3 class=" text-Darkblue font-[700] font-outfit text-[22px] text-center w-full">Improve your front-end </h3>
+  <h3 class=" text-Darkblue font-[700] font-outfit text-[22px] text-center w-full">  skill by building projects </h3>
+
+  <p class=" text-Lightgray text-center text-[16px] font-outfit font-medium ">Scan the QR code to visit Frontend </p>
+  <p class=" text-Lightgray text-center text-[16px] font-outfit font-medium "> Mentor and take your coding skills to </p>
+  <p class=" text-Lightgray text-center text-[16px] font-outfit font-medium ">the next skill</p>
   
 </div>
 </div>
-
-  </div>
+<p class="mt-4 font-outfit text-[12px]"> Challenge by <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank" class=" text-[#191a68]">Frontend Mentor.</a> Coded by <a href="https://asrat001.github.io/threeJsPortifolio/" target="_blank" class="text-[#191a68]">Asrat</a>.</p>
+</main>
 
 
   
