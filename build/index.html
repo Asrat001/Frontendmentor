@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-
-
-
-</body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="bg-[#36384D] flex justify-center items-center w-full h-screen">
+    <main
+      class="bg-slate-50 w-[800px] h-[400px] rounded-xl grid grid-cols-2 px-5"
+    >
+      <div class="">
+        <h1 class="text-[60px] font-Robotobold text-btncolor">Stay updated!</h1>
+        <h1 class="text-[16px] font-Robotoregular">
+          Join 60,000+ product managers receiving monthly updates on:
+        </h1>
+        <ul
+          class="list-image-[url(../assets/images/icon-list.svg)] text-[16px] font-Robotoregular"
+        >
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form>
+          <div class="flex justify-between">
+            <label for="email">Email address</label>
+            <span class="text-red-600 hidden"> Valid email required</span>
+          </div>
+          <input
+            type="email"
+            class="p-3 border-[1px] border-gray-400 rounded-lg focus:border-sky-500 focus:ring-sky-500 focus:border-[1px]"
+          />
+          <button
+            class="bg-btncolor p-4 rounded-lg text-center text-white"
+            type="submit"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div>
+        
+      </div>
+    </main>
+  </body>
 </html>

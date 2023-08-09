@@ -533,3 +533,37 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.flex {
+  display: flex;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-\[\#36384D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 56 77 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
