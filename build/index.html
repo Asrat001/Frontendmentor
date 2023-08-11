@@ -17,29 +17,31 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="bg-[#36384D] flex justify-center items-center w-full h-screen">
-    <main
-      class="bg-slate-50 w-[800px] h-[400px] rounded-xl grid grid-cols-2 px-5"
+  <body class="bg-[#36384D]  ">
+    <div class="flex justify-center items-center w-full h-screen py-10 ">
+      <main
+      class="bg-slate-50  h-auto rounded-xl py-6 grid grid-cols-2 gap-10 pr-3 place-items-center"
     >
-      <div class="">
-        <h1 class="text-[60px] font-Robotobold text-btncolor">Stay updated!</h1>
+      <div class="flex flex-col gap-y-4 pl-10 pr-2">
+        <h1 class="text-[60px]  text-btncolor font-Robotobold font-bold">Stay updated!</h1>
         <h1 class="text-[16px] font-Robotoregular">
-          Join 60,000+ product managers receiving monthly updates on:
+          Join 60,000+ product managers receiving monthly <br/> updates on:
         </h1>
         <ul
-          class="list-image-[url(../assets/images/icon-list.svg)] text-[16px] font-Robotoregular"
+          class="list-image-[url(../assets/images/icon-list.svg)] text-[16px] font-Robotoregular ml-6 space-y-3"
         >
-          <li>Product discovery and building what matters</li>
+          <li class="font-Robotoregular text-[16px]">Product discovery and building what matters</li>
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form>
+        <form class="flex flex-col  gap-y-4">
           <div class="flex justify-between">
             <label for="email">Email address</label>
             <span class="text-red-600 hidden"> Valid email required</span>
           </div>
           <input
             type="email"
+            placeholder="  email@company.com"
             class="p-3 border-[1px] border-gray-400 rounded-lg focus:border-sky-500 focus:ring-sky-500 focus:border-[1px]"
           />
           <button
@@ -51,8 +53,14 @@
         </form>
       </div>
       <div>
-        
+        <picture class=" ">
+          <source srcset="../assets/images/illustration-sign-up-desktop.svg"  media="(min-width: 640px)"/>
+          <img src="../assets/images/illustration-sign-up-mobile.svg"/>
+
+        </picture>
       </div>
     </main>
+    </div>
+ 
   </body>
 </html>
