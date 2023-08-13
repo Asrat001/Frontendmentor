@@ -12,15 +12,16 @@
       href="../assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../dist/output.css" />
+    <script src="./main.js" type="module"></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="bg-[#36384D]  ">
+  <body class="bg-[#36384D] ">
     <div class="flex justify-center items-center w-full h-screen py-10 ">
       <main
-      class="bg-slate-50  h-auto rounded-xl py-6 grid grid-cols-2 gap-10 pr-3 place-items-center"
+      class="bg-slate-50  h-auto sm:rounded-xl py-6 grid grid-cols-2 gap-20 pr-3 place-items-center  overflow-hidden "
     >
       <div class="flex flex-col gap-y-4 pl-10 pr-2">
         <h1 class="text-[60px]  text-btncolor font-Robotobold font-bold">Stay updated!</h1>
@@ -47,19 +48,35 @@
           <button
             class="bg-btncolor p-4 rounded-lg text-center text-white"
             type="submit"
+            id="openModal"
           >
             Subscribe to monthly newsletter
           </button>
         </form>
       </div>
-      <div>
+      
         <picture class=" ">
           <source srcset="../assets/images/illustration-sign-up-desktop.svg"  media="(min-width: 640px)"/>
           <img src="../assets/images/illustration-sign-up-mobile.svg"/>
 
         </picture>
-      </div>
+  
     </main>
+    <dialog class="rounded-lg w-[350px] p-4" >
+      <form>
+       <img src="../assets/images/icon-success.svg" alt="success"/>
+       <p class="text-[40px] font-Robotobold font-bold text-btncolor"> Thanks for </br>brsubscribing!</p>
+       <p class="text-[16px] font-Robotoregular text-btncolor">A confirmation email has been sent to testuser@loremcompany.com. 
+         Please open it and click the button inside to confirm your subscription.</p>
+         <button
+         class="bg-btncolor p-4 rounded-lg text-center text-white w-full" 
+         id="closDialogue"
+       >
+       Dismiss message
+       </button>
+      </form>
+         </dialog>
+  
     </div>
  
   </body>
