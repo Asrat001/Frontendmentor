@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="../dist/output.css" />
-    <script src="./main.js" type="module"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
-  </head>
-  <body class="sm:bg-[#36384D] bg-white  ">
-    <div class="sm:flex sm:justify-center sm:items-center  sm:h-screen    ">
-      <main
-      class="bg-slate-50 h-screen sm:h-auto sm:rounded-xl sm:py-6 grid-cols-1 grid sm:grid-cols-2 sm:gap-20 sm:pr-3 sm:place-items-center  overflow-hidden "
-    >
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <script src="./main.js" type="module"></script>
+
+  <title>
+    Frontend Mentor | Newsletter sign-up form with success message
+  </title>
+</head>
+
+<body class="sm:bg-[#36384D] bg-white  ">
+  <div class="sm:flex sm:justify-center sm:items-center  sm:h-screen    ">
+    <main
+      class="bg-slate-50 h-screen sm:h-auto sm:rounded-xl sm:py-6 grid-cols-1 grid sm:grid-cols-2 sm:gap-20 sm:pr-3 sm:place-items-center  overflow-hidden ">
       <div class="flex flex-col px-6 gap-y-4 sm:pl-10 sm:pr-2">
         <h1 class="text-[60px]  text-btncolor font-Robotobold font-bold">Stay updated!</h1>
         <h1 class="text-[16px] font-Robotoregular">
-          Join 60,000+ product managers receiving monthly <br/> updates on:
+          Join 60,000+ product managers receiving monthly <br /> updates on:
         </h1>
-        <ul
-          class="list-image-[url(../assets/images/icon-list.svg)] text-[16px] font-Robotoregular ml-6 space-y-3"
-        >
+        <ul class="list-image-[url(../assets/images/icon-list.svg)] text-[16px] font-Robotoregular ml-6 space-y-3">
           <li class="font-Robotoregular text-[16px]">Product discovery and building what matters</li>
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
@@ -40,44 +34,36 @@
             <label for="email">Email address</label>
             <span class="text-red-600 hidden"> Valid email required</span>
           </div>
-          <input
-            type="email"
-            placeholder="  email@company.com"
-            class="p-3 border-[1px] border-gray-400 rounded-lg focus:border-sky-500 focus:ring-sky-500 focus:border-[1px]"
-          />
-          <button
-            class="bg-btncolor p-4 rounded-lg text-center text-white"
-            type="submit"
-            id="openModal"
-          >
+          <input type="email" placeholder="  email@company.com"
+            class="p-3 border-[1px] border-gray-400 rounded-lg focus:border-sky-500 focus:ring-sky-500 focus:border-[1px]" />
+          <button class="bg-btncolor p-4 rounded-lg text-center text-white" type="submit" id="openModal">
             Subscribe to monthly newsletter
           </button>
         </form>
-      </div >
-      
-        <picture class="order-[-1] sm:order-1  h-fit  ">
-          <source srcset="../assets/images/illustration-sign-up-desktop.svg"  media="(min-width: 640px)" class="w-full "/>
-          <img src="../assets/images/illustration-sign-up-mobile.svg" class="w-full"/>
-        </picture>
+      </div>
+
+      <picture class="order-[-1] sm:order-1  h-fit  ">
+        <source srcset="../assets/images/illustration-sign-up-desktop.svg" media="(min-width: 640px)" class="w-full " />
+        <img src="../assets/images/illustration-sign-up-mobile.svg" class="w-full" />
+      </picture>
 
     </main>
-  
-    </div>
-    <dialog class="sm:rounded-lg  sm:h-fit sm:w-[350px] bg-transparent sm:bg-white w-full h-full p-6 " >
-      <form class="  ">
 
-  <img src="../assets/images/icon-success.svg" alt="success"/>
-  <p class="text-[40px] font-Robotobold font-bold text-btncolor"> Thanks for </br>brsubscribing!</p>
-  <p class="text-[16px] font-Robotoregular text-btncolor">A confirmation email has been sent to testuser@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.</p>
-         <button
-         class="bg-btncolor mt-[400px] p-4 rounded-lg text-center text-white w-full" 
-         id="closDialogue"
-       >
-       Dismiss message
-       </button>
-      </form>
-         </dialog>
- 
-  </body>
+  </div>
+  <dialog class="sm:rounded-lg  sm:h-fit  sm:w-[400px] bg-transparent sm:bg-white w-full h-full sm:py-8 p-6 ">
+    <form class="  ">
+
+      <img src="../assets/images/icon-success.svg" alt="success" />
+      <p class="text-[40px] font-Robotobold font-bold text-btncolor"> Thanks for </br>brsubscribing!</p>
+      <p class="text-[16px] font-Robotoregular text-btncolor">A confirmation email has been sent to
+        <strong>@loremcompany.com. </strong>
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="bg-btncolor sm:mt-4 mt-[400px] p-4 rounded-lg text-center text-white w-full" id="closDialogue">
+        Dismiss message
+      </button>
+    </form>
+  </dialog>
+
+</body>
+
 </html>
