@@ -18,12 +18,12 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
-  <body class="bg-[#36384D] ">
-    <div class="sm:flex sm:justify-center sm:items-center w-full sm:h-screen h-full   ">
+  <body class="sm:bg-[#36384D] bg-white  ">
+    <div class="sm:flex sm:justify-center sm:items-center  sm:h-screen    ">
       <main
       class="bg-slate-50 h-screen sm:h-auto sm:rounded-xl sm:py-6 grid-cols-1 grid sm:grid-cols-2 sm:gap-20 sm:pr-3 sm:place-items-center  overflow-hidden "
     >
-      <div class="flex flex-col px-6 gap-y-4 sm:pl-10 sm:pr-2 bg-neutral-600">
+      <div class="flex flex-col px-6 gap-y-4 sm:pl-10 sm:pr-2">
         <h1 class="text-[60px]  text-btncolor font-Robotobold font-bold">Stay updated!</h1>
         <h1 class="text-[16px] font-Robotoregular">
           Join 60,000+ product managers receiving monthly <br/> updates on:
@@ -55,29 +55,29 @@
         </form>
       </div >
       
-        <picture class="order-[-1] sm:order-1  bg-orange-600  grid  ">
+        <picture class="order-[-1] sm:order-1  h-fit  ">
           <source srcset="../assets/images/illustration-sign-up-desktop.svg"  media="(min-width: 640px)" class="w-full "/>
           <img src="../assets/images/illustration-sign-up-mobile.svg" class="w-full"/>
-
         </picture>
 
     </main>
-    <dialog class="rounded-lg w-[350px] p-4" >
-      <form>
-       <img src="../assets/images/icon-success.svg" alt="success"/>
-       <p class="text-[40px] font-Robotobold font-bold text-btncolor"> Thanks for </br>brsubscribing!</p>
-       <p class="text-[16px] font-Robotoregular text-btncolor">A confirmation email has been sent to testuser@loremcompany.com. 
-         Please open it and click the button inside to confirm your subscription.</p>
+  
+    </div>
+    <dialog class="sm:rounded-lg  sm:h-fit sm:w-[350px] bg-transparent sm:bg-white w-full h-full p-6 " >
+      <form class="  ">
+
+  <img src="../assets/images/icon-success.svg" alt="success"/>
+  <p class="text-[40px] font-Robotobold font-bold text-btncolor"> Thanks for </br>brsubscribing!</p>
+  <p class="text-[16px] font-Robotoregular text-btncolor">A confirmation email has been sent to testuser@loremcompany.com. 
+    Please open it and click the button inside to confirm your subscription.</p>
          <button
-         class="bg-btncolor p-4 rounded-lg text-center text-white w-full" 
+         class="bg-btncolor mt-[400px] p-4 rounded-lg text-center text-white w-full" 
          id="closDialogue"
        >
        Dismiss message
        </button>
       </form>
          </dialog>
-  
-    </div>
  
   </body>
 </html>
